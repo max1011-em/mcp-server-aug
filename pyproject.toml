@@ -1,0 +1,18 @@
+[project]
+name = "mcp-aug"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=2.2.0",
+    "requests>=2.34.2",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+mcp-aug = "mcp_aug:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
